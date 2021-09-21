@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Sign-Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="signup.component.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+       <style>
+           
+.panel-class{
+    margin-top: 80px;
+       
+} 
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #701ef4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+       </style> 
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                        <a href="#"></a>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        
+                    </button>
+                    <a  href="#"class= "navbar-brand">StarDust</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right" >                       
+                        <li><a  href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a  href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                    </div>
+            </div>
+        </nav>
+        <div class="container panel-class">
+            <div class="row ">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <h1 style=color:black >Sign Up</h1>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class= "form-control" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class= "form-control" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class= "form-control" name="Password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class= "form-control" name="Contact" placeholder="Contact">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class= "form-control" name="City" placeholder="City">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class= "form-control" name="Address" placeholder="Address">
+                        </div>
+                        <!-- <input type="submit" value="Submit" class="btn btn-primary "> -->
+                        
+                        <button class="button" style="vertical-align:middle"><span>Submit</span></button>
+                    </form>
+                        
+                
+            </div>
+                
+        </div>
+        </div>
+            
+            
+    </body>
+</html>
